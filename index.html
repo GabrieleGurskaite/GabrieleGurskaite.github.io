@@ -54,6 +54,7 @@
         <li><a href="#about"><i class="bi bi-person navicon"></i><span>Apie</span></a></li>
         <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i><span>Patirtis</span></a></li>
         <li><a href="#portfolio"><i class="bi bi-images navicon"></i><span>Atlikti darbai</span></a></li>
+        <li><a href="#kompetencijos"><i class="bi bi-trophy navicon"></i><span>Kompetencijos</span></a></li>
         <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i><span>Paslaugos</span></a></li>
         <li><a href="#contact"><i class="bi bi-envelope navicon"></i><span>Kontaktai</span></a></li>
       </ul>
@@ -87,6 +88,15 @@
 
     <!-- About Section -->
     <section id="about" class="about section">
+
+      <!-- PAPILDOMA UŽDUOTIS: animuotos CSS figūros (pradžia) -->
+      <div class="about-shapes" aria-hidden="true">
+        <span class="shape shape-circle"></span>
+        <span class="shape shape-triangle"></span>
+        <span class="shape shape-square"></span>
+        <span class="shape shape-ring"></span>
+      </div>
+      <!-- PAPILDOMA UŽDUOTIS: animuotos CSS figūros (pabaiga) -->
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
@@ -326,6 +336,196 @@
       </div>
 
     </section><!-- /Portfolio Section -->
+
+    <!-- Competence Progress Section (10 LD) -->
+    <section id="kompetencijos" class="kompetencijos section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Kompetencijų pažanga</h2>
+        <p>Mano įgūdžių lenta: ką planuoju išmokti, ką šiuo metu mokausi ir ką jau pasiekiau</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <!-- XP, lygis, rangas, progresas ir statistika -->
+        <div class="kp-panel" data-aos="fade-up">
+
+          <div class="kp-summary">
+            <div class="kp-tile kp-tile--xp">
+              <span class="kp-tile__icon"><i class="bi bi-star"></i></span>
+              <div>
+                <span class="kp-tile__label">Bendras XP:</span>
+                <strong class="kp-tile__value">240 XP</strong>
+              </div>
+            </div>
+            <div class="kp-tile kp-tile--level">
+              <span class="kp-tile__icon"><i class="bi bi-bar-chart-fill"></i></span>
+              <div>
+                <span class="kp-tile__label">Lygis:</span>
+                <strong class="kp-tile__value">3</strong>
+              </div>
+            </div>
+            <div class="kp-tile kp-tile--rank">
+              <span class="kp-tile__icon"><i class="bi bi-trophy"></i></span>
+              <div>
+                <span class="kp-tile__label">Rangas:</span>
+                <strong class="kp-tile__value">Specialistas</strong>
+              </div>
+            </div>
+          </div>
+
+          <div class="kp-progress">
+            <div class="kp-progress__head">
+              <span>Progresas iki kito lygio</span>
+              <span>240 / 300 XP</span>
+            </div>
+            <div class="kp-progress__track" role="progressbar" aria-label="Progresas iki kito lygio" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+              <div class="kp-progress__fill" style="width: 60%;"><span>60 %</span></div>
+            </div>
+          </div>
+
+          <ul class="kp-levels">
+            <li><strong>1 lygis · Pradedantysis</strong><span>0–49 XP</span></li>
+            <li><strong>2 lygis · Praktikantas</strong><span>50–149 XP</span></li>
+            <li class="is-current"><strong>3 lygis · Specialistas</strong><span>150–299 XP</span></li>
+            <li><strong>4 lygis · Profesionalas</strong><span>≥ 300 XP</span></li>
+          </ul>
+
+          <ul class="kp-stats">
+            <li><i class="bi bi-code-slash"></i><span>Įgūdžiai:</span><strong>8</strong></li>
+            <li><i class="bi bi-check-circle"></i><span>Atlikta:</span><strong>4</strong></li>
+            <li><i class="bi bi-pie-chart"></i><span>Procentas:</span><strong>50 %</strong></li>
+          </ul>
+
+        </div><!-- End Panel -->
+
+        <!-- Įgūdžių Kanban lenta -->
+        <div class="kp-board" data-aos="fade-up" data-aos-delay="100">
+
+          <div class="kp-column kp-column--planned">
+            <div class="kp-column__head">
+              <i class="bi bi-calendar3"></i>
+              <h3>Planuojama</h3>
+              <span class="kp-count">2</span>
+            </div>
+            <div class="kp-column__body">
+            <article class="kp-card" data-status="planned" data-xp="60">
+              <span class="kp-card__icon"><i class="bi bi-shield-check"></i></span>
+              <div class="kp-card__content">
+                <h4>Relinė apsauga</h4>
+                <div class="kp-card__meta">
+                  <span class="kp-badge">Būsena: Planuojama</span>
+                  <span class="kp-xp">XP: 60</span>
+                </div>
+              </div>
+            </article><!-- End Skill Card -->
+
+            <article class="kp-card" data-status="planned" data-xp="50">
+              <span class="kp-card__icon"><i class="bi bi-cpu"></i></span>
+              <div class="kp-card__content">
+                <h4>SCADA ir automatizacija</h4>
+                <div class="kp-card__meta">
+                  <span class="kp-badge">Būsena: Planuojama</span>
+                  <span class="kp-xp">XP: 50</span>
+                </div>
+              </div>
+            </article><!-- End Skill Card -->
+
+            </div>
+          </div><!-- End Column -->
+
+          <div class="kp-column kp-column--learning">
+            <div class="kp-column__head">
+              <i class="bi bi-book"></i>
+              <h3>Mokomasi</h3>
+              <span class="kp-count">2</span>
+            </div>
+            <div class="kp-column__body">
+            <article class="kp-card" data-status="learning" data-xp="70">
+              <span class="kp-card__icon"><i class="bi bi-sun"></i></span>
+              <div class="kp-card__content">
+                <h4>Saulės elektrinių projektavimas</h4>
+                <div class="kp-card__meta">
+                  <span class="kp-badge">Būsena: Mokomasi</span>
+                  <span class="kp-xp">XP: 70</span>
+                </div>
+              </div>
+            </article><!-- End Skill Card -->
+
+            <article class="kp-card" data-status="learning" data-xp="40">
+              <span class="kp-card__icon"><i class="bi bi-battery-charging"></i></span>
+              <div class="kp-card__content">
+                <h4>Energijos kaupimo sistemos</h4>
+                <div class="kp-card__meta">
+                  <span class="kp-badge">Būsena: Mokomasi</span>
+                  <span class="kp-xp">XP: 40</span>
+                </div>
+              </div>
+            </article><!-- End Skill Card -->
+
+            </div>
+          </div><!-- End Column -->
+
+          <div class="kp-column kp-column--done">
+            <div class="kp-column__head">
+              <i class="bi bi-check-circle"></i>
+              <h3>Atlikta</h3>
+              <span class="kp-count">4</span>
+            </div>
+            <div class="kp-column__body">
+            <article class="kp-card" data-status="done" data-xp="80">
+              <span class="kp-card__icon"><i class="bi bi-lightning-charge"></i></span>
+              <div class="kp-card__content">
+                <h4>Elektros grandinių analizė</h4>
+                <div class="kp-card__meta">
+                  <span class="kp-badge">Būsena: Atlikta</span>
+                  <span class="kp-xp">XP: 80</span>
+                </div>
+              </div>
+            </article><!-- End Skill Card -->
+
+            <article class="kp-card" data-status="done" data-xp="70">
+              <span class="kp-card__icon"><i class="bi bi-pencil-square"></i></span>
+              <div class="kp-card__content">
+                <h4>AutoCAD schemų braižymas</h4>
+                <div class="kp-card__meta">
+                  <span class="kp-badge">Būsena: Atlikta</span>
+                  <span class="kp-xp">XP: 70</span>
+                </div>
+              </div>
+            </article><!-- End Skill Card -->
+
+            <article class="kp-card" data-status="done" data-xp="50">
+              <span class="kp-card__icon"><i class="bi bi-graph-up"></i></span>
+              <div class="kp-card__content">
+                <h4>MATLAB skaičiavimai</h4>
+                <div class="kp-card__meta">
+                  <span class="kp-badge">Būsena: Atlikta</span>
+                  <span class="kp-xp">XP: 50</span>
+                </div>
+              </div>
+            </article><!-- End Skill Card -->
+
+            <article class="kp-card" data-status="done" data-xp="40">
+              <span class="kp-card__icon"><i class="bi bi-table"></i></span>
+              <div class="kp-card__content">
+                <h4>Excel duomenų apdorojimas</h4>
+                <div class="kp-card__meta">
+                  <span class="kp-badge">Būsena: Atlikta</span>
+                  <span class="kp-xp">XP: 40</span>
+                </div>
+              </div>
+            </article><!-- End Skill Card -->
+
+            </div>
+          </div><!-- End Column -->
+
+        </div><!-- End Board -->
+
+      </div>
+
+    </section><!-- /Competence Progress Section -->
 
     <!-- Services Section -->
     <section id="services" class="services section">
