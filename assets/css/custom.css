@@ -1,20 +1,3 @@
-/*--------------------------------------------------------------
-# custom.css – 9 laboratorinis darbas (CSS stilių kūrimas)
-# Šis failas jungiamas PO main.css, todėl perrašo šablono stilius.
-# Spalvų paletė:
-#   tamsiai mėlyna  #0b2447   (antraštės, mygtukai, navigacija)
-#   vidutinė mėlyna #19376d
-#   gintaro         #f59e0b   (akcentas)
-#   tamsi gintaro   #92400e   (nuorodos, akcento tekstas – geras kontrastas)
-#   teksto pilka    #1f2937 / #334155
---------------------------------------------------------------*/
-
-
-/*--------------------------------------------------------------
-# 2. Tipografija (šriftai, antraštės, pastraipos)
---------------------------------------------------------------*/
-
-/* 2a. Nauja šriftų šeima: Montserrat (antraštės, meniu) ir Nunito (tekstas) */
 :root {
   --default-font: "Nunito", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
   --heading-font: "Montserrat", "Segoe UI", Arial, sans-serif;
@@ -29,7 +12,6 @@ body {
   color: #1f2937;
 }
 
-/* 2b. Antraščių stilius <h1>-<h6>: skirtingi dydžiai, storiai, spalvos */
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--heading-font);
   color: #0b2447;
@@ -44,7 +26,6 @@ h4 { font-size: 1.3rem;  font-weight: 700; }
 h5 { font-size: 1.1rem;  font-weight: 600; color: #92400e; }
 h6 { font-size: 1rem;    font-weight: 600; color: #92400e; text-transform: uppercase; letter-spacing: 1px; }
 
-/* skilčių pavadinimai */
 .section-title h2 {
   font-size: 2.2rem;
   font-weight: 800;
@@ -72,7 +53,6 @@ h6 { font-size: 1rem;    font-weight: 600; color: #92400e; text-transform: upper
   margin: 28px 0 22px;
 }
 
-/* 2c. Pastraipų stilius */
 p {
   font-size: 1.05rem;
   line-height: 1.85;
@@ -85,12 +65,6 @@ p.fst-italic {
   font-weight: 600;
 }
 
-
-/*--------------------------------------------------------------
-# 3. Mygtukai (:hover, :active) ir nuorodos
---------------------------------------------------------------*/
-
-/* 3a. Mygtukai */
 body .contact .php-email-form button[type="submit"],
 body .btn {
   display: inline-block;
@@ -133,7 +107,6 @@ body .btn:focus-visible {
   outline-offset: 3px;
 }
 
-/* 3b. Nuorodos (tekste, poraštėje) */
 main p a,
 main li a,
 main td a,
@@ -166,13 +139,6 @@ main td a:active,
   color: #b45309;
 }
 
-
-/*--------------------------------------------------------------
-# 4. Išdėstymas: Margin / Padding ir turinio blokų išvaizda
-#    skiltys: „Apie“, „Patirtis“, „Atlikti darbai“
---------------------------------------------------------------*/
-
-/* 4a. Tarpai tarp skilčių ir jų viduje */
 #about,
 #resume,
 #portfolio {
@@ -186,7 +152,6 @@ main td a:active,
   margin-bottom: 10px;
 }
 
-/* --- Apie --- */
 #about .col-lg-4 img {
   border: 6px solid #ffffff;
   border-radius: 18px;
@@ -208,7 +173,6 @@ main td a:active,
   border-bottom: 1px dashed #cbd5e1;
 }
 
-/* --- Patirtis --- */
 #resume .resume-item {
   padding: 22px 26px 14px 28px;
   margin: 0 0 24px;
@@ -249,7 +213,6 @@ main td a:active,
   padding-bottom: 6px;
 }
 
-/* --- Atlikti darbai --- */
 #portfolio .portfolio-filters {
   margin-bottom: 38px;
 }
@@ -272,7 +235,6 @@ main td a:active,
   padding: 24px 24px 34px;
 }
 
-/* 4b. Kraštinės, užapvalinimai, šešėliai */
 #portfolio .portfolio-item img {
   border: 4px solid #ffffff;
   border-radius: 16px;
@@ -289,14 +251,6 @@ main td a:active,
   box-shadow: 0 10px 26px rgba(11, 36, 71, 0.25);
 }
 
-
-/*--------------------------------------------------------------
-# 5. Dviejų (trijų) pasirinktų komponentų stilius
-#    (komponentai: navigacijos juosta, įgūdžių progreso juostos,
-#     paslaugų kortelės – nesutampa su 2-4 punktais)
---------------------------------------------------------------*/
-
-/* 5.1 Navigacijos juosta (fonas, spalva, kraštinė, šešėlis) */
 .header .navmenu a,
 .header .navmenu a:focus {
   background: #0b2447;
@@ -314,7 +268,6 @@ main td a:active,
   border-color: #ffffff;
 }
 
-/* 5.2 Įgūdžių progreso juostos (aukštis, užapvalinimas, fonas, šešėlis) */
 .skills .progress {
   height: 66px;
 }
@@ -333,7 +286,6 @@ main td a:active,
   background: linear-gradient(90deg, #19376d, #f59e0b);
 }
 
-/* 5.3 Paslaugų kortelės (papildomai: kraštinė, užapvalinimas, šešėlis, tarpai) */
 .services .service-item {
   padding: 48px 28px;
   border-top: 6px solid #0b2447;
@@ -346,12 +298,6 @@ main td a:active,
   box-shadow: 0 20px 46px rgba(11, 36, 71, 0.22);
 }
 
-
-/*--------------------------------------------------------------
-# PAPILDOMA UŽDUOTIS: 8 LD sukurtų HTML elementų stilius
---------------------------------------------------------------*/
-
-/* 1a. Nenumeruotas sąrašas (pseudo-elementas ::before) */
 .services .list-tech {
   list-style: none;
   padding: 0;
@@ -377,7 +323,6 @@ main td a:active,
   font-size: 0.8rem;
 }
 
-/* 1b. Įdėtinis sąrašas – kitoks stilius nei pagrindinis */
 .services .list-nested {
   list-style: none;
   margin: 10px 0 0 4px;
@@ -400,7 +345,6 @@ main td a:active,
   font-weight: 700;
 }
 
-/* 1a. Numeruotas sąrašas (CSS skaitikliai) */
 .services .list-steps {
   list-style: none;
   counter-reset: etapas;
@@ -437,7 +381,6 @@ main td a:active,
   font-size: 0.95rem;
 }
 
-/* 2. Lentelė */
 .services .table-responsive {
   padding: 8px 8px 22px;
 }
@@ -461,7 +404,6 @@ main td a:active,
   font-size: 0.9rem;
 }
 
-/* 2c. Vienodi langelių vidiniai tarpai ir turinys centre */
 .services .tabulka-paslaugu th,
 .services .tabulka-paslaugu td {
   padding: 16px 20px;
@@ -471,7 +413,6 @@ main td a:active,
   border-bottom: 1px solid #e2e8f0;
 }
 
-/* 2a. Antraštinė eilutė */
 .services .tabulka-paslaugu thead th {
   background: #0b2447;
   color: #ffffff;
@@ -482,7 +423,6 @@ main td a:active,
   border-bottom: 4px solid #f59e0b;
 }
 
-/* 2b. „Zebra“ stilius ir :hover efektas */
 .services .tabulka-paslaugu tbody tr:nth-child(odd) td {
   background: #ffffff;
 }
@@ -508,4 +448,449 @@ main td a:active,
 
 .services .tabulka-paslaugu tbody tr:hover td:last-child {
   color: #78350f;
+}
+
+#kompetencijos {
+  padding: 100px 0 90px;
+}
+
+#kompetencijos .section-title {
+  padding-bottom: 44px;
+  margin-bottom: 10px;
+}
+
+.kp-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 30px;
+  padding: 26px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 20px;
+  box-shadow: 0 12px 34px rgba(11, 36, 71, 0.10);
+}
+
+.kp-summary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.kp-tile {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 18px 20px;
+  border-radius: 16px;
+}
+
+.kp-tile__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  font-size: 1.6rem;
+}
+
+.kp-tile__label {
+  display: block;
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #475569;
+}
+
+.kp-tile__value {
+  display: block;
+  font-family: var(--heading-font);
+  font-size: 1.9rem;
+  font-weight: 800;
+  line-height: 1.25;
+  color: #0b2447;
+}
+
+.kp-tile--xp { background: #eff6ff; }
+.kp-tile--xp .kp-tile__icon { background: #dbeafe; color: #1d4ed8; }
+
+.kp-tile--level { background: #f5f3ff; }
+.kp-tile--level .kp-tile__icon { background: #ede9fe; color: #6d28d9; }
+
+.kp-tile--rank { background: #f0fdf4; }
+.kp-tile--rank .kp-tile__icon { background: #dcfce7; color: #15803d; }
+
+.kp-progress__head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 4px 12px;
+  margin-bottom: 10px;
+  font-family: var(--heading-font);
+  font-weight: 700;
+  color: #0b2447;
+}
+
+.kp-progress__head span:last-child {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #475569;
+}
+
+.kp-progress__track {
+  height: 26px;
+  overflow: hidden;
+  background: #e2e8f0;
+  border-radius: 999px;
+  box-shadow: inset 0 2px 4px rgba(15, 23, 42, 0.18);
+}
+
+.kp-progress__fill {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+  padding: 0 14px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #0b2447, #1d4ed8);
+  color: #ffffff;
+  font-size: 0.8rem;
+  font-weight: 700;
+  transition: width 0.6s ease;
+}
+
+.kp-levels {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.kp-levels li {
+  display: flex;
+  flex: 1 1 200px;
+  flex-direction: column;
+  padding: 10px 14px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  color: #334155;
+}
+
+.kp-levels strong {
+  font-size: 0.95rem;
+  color: #0b2447;
+}
+
+.kp-levels li.is-current {
+  background: #0b2447;
+  border-color: #0b2447;
+  color: #e2e8f0;
+}
+
+.kp-levels li.is-current strong {
+  color: #ffffff;
+}
+
+.kp-stats {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 18px 0 0;
+  list-style: none;
+  border-top: 1px solid #e2e8f0;
+}
+
+.kp-stats li {
+  display: flex;
+  flex: 1 1 180px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 6px 14px;
+  font-weight: 600;
+  color: #334155;
+}
+
+.kp-stats li + li {
+  border-left: 1px solid #e2e8f0;
+}
+
+.kp-stats i {
+  font-size: 1.4rem;
+  color: #6d28d9;
+}
+
+.kp-stats strong {
+  font-family: var(--heading-font);
+  font-size: 1.3rem;
+  color: #0b2447;
+}
+
+.kp-board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  align-items: start;
+}
+
+.kp-column {
+  overflow: hidden;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(11, 36, 71, 0.10);
+}
+
+.kp-column__head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 20px;
+  border-bottom: 4px solid #e2e8f0;
+}
+
+.kp-column__head i {
+  font-size: 1.4rem;
+}
+
+.kp-column__head h3 {
+  flex: 1;
+  margin: 0;
+  font-size: 1.2rem;
+  color: #0b2447;
+}
+
+.kp-count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 30px;
+  height: 30px;
+  background: #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 1px 4px rgba(15, 23, 42, 0.18);
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #0b2447;
+}
+
+.kp-column__body {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  min-height: 120px;
+  padding: 18px;
+  background: #f8fafc;
+}
+
+.kp-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 16px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(11, 36, 71, 0.07);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.kp-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 22px rgba(11, 36, 71, 0.14);
+}
+
+.kp-card__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 46px;
+  height: 46px;
+  border-radius: 12px;
+  font-size: 1.4rem;
+}
+
+.kp-card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 0;
+}
+
+.kp-card h4 {
+  margin: 0;
+  font-size: 1.02rem;
+  line-height: 1.3;
+  color: #0b2447;
+}
+
+.kp-card__meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.kp-badge,
+.kp-xp {
+  padding: 3px 12px;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.kp-xp {
+  border-radius: 8px;
+  background: #e2e8f0;
+  color: #1e293b;
+}
+
+.kp-column--planned .kp-column__head { background: #fff7ed; border-bottom-color: #f59e0b; }
+.kp-column--planned .kp-column__head i { color: #b45309; }
+.kp-column--planned .kp-card__icon { background: #fef3c7; color: #b45309; }
+.kp-column--planned .kp-badge { background: #fef3c7; color: #78350f; }
+
+.kp-column--learning .kp-column__head { background: #eff6ff; border-bottom-color: #3b82f6; }
+.kp-column--learning .kp-column__head i { color: #1d4ed8; }
+.kp-column--learning .kp-card__icon { background: #dbeafe; color: #1d4ed8; }
+.kp-column--learning .kp-badge { background: #dbeafe; color: #1e3a8a; }
+
+.kp-column--done .kp-column__head { background: #f0fdf4; border-bottom-color: #22c55e; }
+.kp-column--done .kp-column__head i { color: #15803d; }
+.kp-column--done .kp-card__icon { background: #dcfce7; color: #15803d; }
+.kp-column--done .kp-badge { background: #dcfce7; color: #14532d; }
+
+@media (max-width: 991px) {
+  .kp-board {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 767px) {
+  .kp-panel {
+    padding: 18px;
+  }
+
+  .kp-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .kp-stats li + li {
+    border-left: 0;
+    border-top: 1px solid #e2e8f0;
+  }
+}
+
+#services {
+  background: linear-gradient(120deg, #e0f2fe, #fef3c7, #dcfce7, #ede9fe, #e0f2fe);
+  background-size: 300% 300%;
+  animation: gradientMove 16s ease-in-out infinite;
+}
+
+@keyframes gradientMove {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+#about {
+  position: relative;
+}
+
+#about .container {
+  position: relative;
+  z-index: 1;
+}
+
+.about-shapes {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.shape {
+  position: absolute;
+  display: block;
+}
+
+.shape-circle {
+  top: 12%;
+  left: 3%;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #f59e0b, #fcd34d);
+  opacity: 0.35;
+  animation: shapeFloat 7s ease-in-out infinite alternate;
+}
+
+.shape-triangle {
+  top: 10%;
+  right: 6%;
+  width: 0;
+  height: 0;
+  border-left: 55px solid transparent;
+  border-right: 55px solid transparent;
+  border-bottom: 95px solid rgba(25, 55, 109, 0.28);
+  animation: shapeRotate 14s linear infinite;
+}
+
+.shape-square {
+  bottom: 8%;
+  left: 7%;
+  width: 70px;
+  height: 70px;
+  border: 6px solid #f59e0b;
+  border-radius: 14px;
+  opacity: 0.5;
+  animation: shapeSpin 9s ease-in-out infinite;
+}
+
+.shape-ring {
+  bottom: 10%;
+  right: 9%;
+  width: 96px;
+  height: 96px;
+  border: 10px solid rgba(29, 78, 216, 0.30);
+  border-radius: 50%;
+  animation: shapePulse 4s ease-in-out infinite;
+}
+
+@keyframes shapeFloat {
+  from { transform: translate(0, 0); }
+  to   { transform: translate(18px, 34px); }
+}
+
+@keyframes shapeRotate {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes shapeSpin {
+  0%   { transform: rotate(0deg) scale(1); }
+  50%  { transform: rotate(180deg) scale(1.35); }
+  100% { transform: rotate(360deg) scale(1); }
+}
+
+@keyframes shapePulse {
+  0%, 100% { transform: scale(0.85); }
+  50%      { transform: scale(1.2); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #services,
+  .shape {
+    animation: none;
+  }
 }
